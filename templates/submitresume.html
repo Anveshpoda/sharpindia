@@ -6,7 +6,7 @@
     <title>Sharp india</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/subresume.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
@@ -206,7 +206,7 @@
                 <div class="row" id="navlist">
                     <ul class="nav navbar-nav">
 
-                        <li>
+                        <li class="active">
                             <a href="./submitresume.html">Submit resume</a>
                         </li>
                         <li>
@@ -230,7 +230,7 @@
                         <li>
                             <a href="../index.php">Home</a>
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="./about.html">About us</a>
                         </li>
                         <li>
@@ -282,142 +282,117 @@
         </div>
 
     </div>
-    <div class="container" id="about">
-        <div class="row" id="aboutlist">
-            <div class="col-sm-6">
-                <ul>
-                    <li class="service">Established in 2014</li>
-                    <li class="service">Specialist in Job Placements</li>
-                    <li class="service">Earned name among Students, Freshers</li>
-                    <li class="service">Trusted Partner to Colleges and Corporates</li>
-                    <li class="service">Preferred vendor to AP Technology Services</li>
-                    <li class="service">Combined experience of over 80 person years</li>
-                    <li class="service">2 States: Andhra Pradesh, Telangana</li>
-                    <li class="service">4 Locations: Hyderabad, Visakhapatnam, Guntur, Ongole</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- Container (Contact Section) -->
-    <div id="contact" class="container-fluid bg-grey">
-
-        <div class="row">
-            <div class="col-sm-3">
-                <ul>
-                    <li>Home</li>
-                    <li>About us</li>
-                    <li>Employers</li>
-                    <li>Careers</li>
-                    <li>Partners</li>
-                    <li>Gallery</li>
-                    <li>Trainings</li>
-                    <li>Privacy policy</li>
-                    <li>Terms & conditions</li>
-                    <li>Blog</li>
-                </ul>
-
-            </div>
-            <div class="col-sm-5">
-                <div class="row">
-                    <div class="col-sm-5 form-group">
-                        <h3 class="text-center">CONTACT</h3>
-                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-                        <br>
-                        <input class="form-control" id="number" name="number" placeholder="Mobile Number" type="number" required>
-                        <br>
-                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-5 form-group">
-                        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
-                        <br>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-3 form-group">
-                        <button class="btn btn-info" type="submit">Send</button>
-                    </div>
-                </div>
-                <div>
-                    <i class="fa fa-linkedin"></i>
-                    <i class="fa fa-twitter"></i>
-                    <i class="fa fa-whatsapp"></i>
-                    <i class="fa fa-facebook"></i>
-                </div>
-            </div>
-            <div class="col-sm-4" id="videos">
-                <div class="row">
-                    <div class="col-sm-12 form-group">
-                        <h3>GALLERY</h3>
-                        <textarea class="form-control" id="comments" name="comments" rows="5" cols="20"></textarea>
-                        <br>
-                    </div>
-                </div>
-                <div class="row">
-                    <h3>VIDEOS</h3>
-                    <div class="col-sm-12 form-group">
-                        <textarea class="form-control" id="comments" name="comments" rows="5"></textarea>
-                        <br>
-                    </div>
-                </div>
-                <!-- <p style="color:white">All rights reserved @sharp india global solutions</p> -->
-            </div>
-        </div>
-    </div>
-
-
-    <!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
-
-    <footer class="container-fluid text-center" id="gotop">
-        <a href="#myPage" title="To Top">
-            <span class="glyphicon glyphicon-chevron-up"></span>
-        </a>
-        <p>All rights reserved @sharpindia global solutions
-            <a href="https://www.sharpindia.com" title="Visit sharpindia">www.sharpindia.com</a>
-        </p>
-    </footer>
-
     <script>
-        $(document).ready(function () {
-            // Add smooth scrolling to all links in navbar + footer link
-            $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
 
-                    // Store hash
-                    var hash = this.hash;
-
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 900, function () {
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
-
-            $(window).scroll(function () {
-                $(".slideanim").each(function () {
-                    var pos = $(this).offset().top;
-
-                    var winTop = $(window).scrollTop();
-                    if (pos < winTop + 600) {
-                        $(this).addClass("slide");
-                    }
-                });
-            });
-        })
-    </script>
-
+        function validate()
+        {
+          if(document.contact.FName.value == "")
+          {
+            alert("Please Enter the First Name");
+            document.contact.FName.focus();
+            return false;
+          }
+          if(document.contact.Phone.value == "")
+          {
+            alert("Please Enter your Contact Number");
+            document.contact.Phone.focus();
+            return false;
+          }
+          if(document.contact.Email.value == "")
+          {
+            alert("Please Enter your Email");
+            document.contact.Email.focus();
+            return false;
+          }
+    
+        }
+    
+      </script>
+    
+    <br>
+      <div class="container" id="content">
+    
+       <div class="row">
+         <div class="left gap">
+           <h3>Submit your CV </h3>
+         </div>
+         <br>
+       <form name = "contact" method="post" action = "submitCV_mail.php" enctype="multipart/form-data">
+    
+         <table width = "70%" align = "center">
+          <tr>
+           <td> First Name: </td>
+           <td> &nbsp; </td>
+           <td> <input name = "FName" type = "text"required><span style="color:red">&nbsp;*</span></td>
+          </tr>
+    
+          <tr>
+           <td colspan="3"> &nbsp; </td>
+          </tr>
+    
+          <tr>
+           <td> Family Name: </td>
+           <td> &nbsp; </td>
+           <td> <input name = "LName" type = "text" required></td>
+          </tr>
+    
+          <tr>
+           <td colspan="3"> &nbsp; </td>
+          </tr>
+    
+          <tr>
+           <td> Phone No: </td>
+           <td> &nbsp; </td>
+           <td> <input name = "Phone" type = "text" required><span style="color:red">&nbsp;*</span></td>
+          </tr>
+    
+          <tr>
+           <td colspan="3"> &nbsp; </td>
+          </tr>
+    
+          <tr>
+           <td> Email: </td>
+           <td> &nbsp; </td>
+           <td> <input name = "Email" type = "text" required><span style="color:red">&nbsp;*</span></td>
+          </tr>
+    
+          <tr>
+           <td colspan="3"> &nbsp; </td>
+          </tr>
+    
+          <tr>
+           <td> Upload your Resume: </td>
+           <td> &nbsp; </td>
+           <td> <input type="file" name="my_file" required><p class = "submitcv">Please Upload PDF/Word Files</p></td>
+          </tr>
+    
+          <tr>
+           <td colspan="3"> &nbsp; </td>
+          </tr>
+    
+          <tr>
+           <td class = "edu1"> Remarks </td>
+           <td>:</td>
+           <td><textarea rows = "7" cols = "60" name = "msg"></textarea></td>
+          </tr>
+    
+          <tr>
+           <td colspan="3"> &nbsp; </td>
+          </tr>
+    
+         <tr>
+           <td colspan="3" style="text-align:center">
+             <input type="submit" value="Submit">
+           </td>
+          </tr>
+    
+      </form>
+    
+         </table>
+    
+    
+       </div><!--/.row-->
+      </div>
 </body>
 
 </html>
