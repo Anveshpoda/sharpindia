@@ -1,0 +1,175 @@
+body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+}
+
+.nav>li{
+    padding:0 23px;
+}
+#navlist li{
+    padding:0 3em 0 2em;
+}
+#jumbotron {
+    /* background-color: #f4511e; */
+    /* color: #fff; */
+    /* margin-top:-8em; */
+    background-image: url("https://icdn5.digitaltrends.com/image/cheap-macbook-air-720x720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25em 25px 0px 25px;
+    font-family: Montserrat, sans-serif;
+}
+#mynavbar li{
+    padding: 5em;
+}
+#list{
+    margin:-10px -15px 10px -15px;
+}
+h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.mobile-show{
+    display: none !important;
+}
+form .row {
+    margin-right: 10em;
+    margin-left: 10em;
+    margin-top: -30px;
+}
+#statistics h4 {
+    color: black;
+}
+form{
+    margin-top:-2em
+}
+#trainingsessions{
+    color:white;
+    background-color: #157DF3;
+}
+#pagination {
+    margin: -8px 0 0 0;
+}
+#services{
+    background-color: #191970;
+    color: white
+}
+#services li{
+    margin:0 5em 0 10em;
+    list-style: none;
+}
+#services .col-sm-2{
+    margin: 0 3em 0 0em;
+    padding-right: 0px;
+}
+#services li{
+    margin:0 0 0 10px;
+    text-decoration: underline
+}
+#services h4{
+    margin: 0px;
+}
+h2 {
+    font-size: 24px;
+    /* text-transform: uppercase; */
+    font-weight: 400;
+    margin:0px 0 30px 0;
+}
+#button{
+    margin-top:56px
+}
+#gotop{
+    padding:0 50px
+}
+#contact{
+    background-color: #1E90FF;
+}
+#contact li{
+    color: white;
+}
+#contact h3{
+    margin: -1.2em 0 10px 0;
+    color: white;
+}
+i.fa {
+    display: inline-block;
+    border-radius: 60px;
+    background-color: white;
+    box-shadow: 0px 0px 2px #888;
+    padding: 0.5em 0.6em;
+  
+  }
+  @keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    form .row {
+        margin-right: 3em;
+        margin-left: 3em;
+        
+    }
+    .mobile-show{
+        display: block !important;
+    }
+    .mobile-hide {
+        display: none !important;
+     }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+    form .row {
+        margin-right: 2em;
+        margin-left: 2em;
+        
+    }
+    #services .col-sm-2{
+        margin: 3em 0 0 0;
+        padding-right: 0px;
+        text-align: center
+    }
+    .mobile-show{
+        display: block !important;
+    }
+    .mobile-hide {
+        display: none !important;
+     }
+     #contact h3{
+        margin: 10px 0 10px 0;
+        color: white;
+    }
+}
