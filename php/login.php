@@ -15,8 +15,9 @@ $check = mysqli_fetch_array($res);
 
 if($check['password'] == $password){
 
-header("location: ../index.php"); 
- 
+//header("location: ../index.php"); 
+echo "<script>top.window.location = '../index.php'</script>";
+
 echo "<br><h3> login success </h3>";
 
 // Store Session Data
@@ -29,7 +30,8 @@ echo "<br>Welcome ". $_SESSION['SIemail'] ;
 }else
     echo "<br><h3> login failure </h3>";
 
-
+}
+  mysqli_close($con);
 
   function test_input($data) {
     $data = trim($data);
@@ -37,7 +39,6 @@ echo "<br>Welcome ". $_SESSION['SIemail'] ;
     $data = htmlspecialchars($data);
     return $data;
   }
- 
-mysqli_close($con);
-}
+
+
 ?>

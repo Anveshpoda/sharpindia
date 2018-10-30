@@ -1,10 +1,3 @@
-<!--
-	Author: W3layouts
-	Author URL: http://w3layouts.com
-	License: Creative Commons Attribution 3.0 Unported
-	License URL: http://creativecommons.org/licenses/by/3.0/
--->
-
 <?php
 require "../php/login.php";
 ?>
@@ -91,7 +84,7 @@ require "../php/login.php";
                         </label>
                     </li>
                     <li>
-                        <a href="#" class="text-right">forgot password?</a>
+                        <a href="../php/forgetPass.php" class="text-right">forgot password?</a>
                     </li>
                     <li class="clearfix"></li>
                 </ul>
